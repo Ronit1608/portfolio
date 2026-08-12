@@ -9,6 +9,15 @@ const withMDX = mdx({
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/about",
+        permanent: false,
+      },
+    ];
+  },
   images: {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
