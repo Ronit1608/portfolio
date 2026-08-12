@@ -15,7 +15,7 @@ import { home, person, social } from "./content";
 
 // IMPORTANT: after your first Vercel deploy, replace this with your live URL
 // e.g. "https://ronit-sharma.vercel.app"  (used for SEO meta tags & schema)
-const baseURL: string = "https://ronit-sharma.vercel.app";
+const baseURL: string = "https://portfolio-tawny-sigma-bihwx6g8vc.vercel.app";
 
 // Only the pages relevant to a Data/AI portfolio are enabled.
 const routes: RoutesConfig = {
