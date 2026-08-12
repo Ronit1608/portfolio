@@ -68,8 +68,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Ronit is a Data Scientist and AI/ML Engineer who builds production-focused AI - multi-agent
-        voice bots, LLM applications, and hybrid RAG pipelines. He blends strong machine learning and
+        I'm a Data Scientist and AI/ML Engineer who builds production-focused AI - multi-agent
+        voice bots, LLM applications, and hybrid RAG pipelines. I blend strong machine learning and
         data-analytics fundamentals with hands-on engineering to ship systems that deliver measurable
         impact, from 80%+ call automation to double-digit conversion gains.
       </>
