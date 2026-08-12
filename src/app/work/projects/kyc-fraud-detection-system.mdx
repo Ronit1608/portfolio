@@ -1,0 +1,39 @@
+---
+title: "KYC Fraud Detection – AI Identity Verification"
+publishedAt: "2025-05-01"
+summary: "A local, end-to-end identity-verification system that combines face matching, deepfake detection, and webcam liveness checks to classify a KYC attempt as Verified, Fraudulent, or Suspicious with a weighted risk score."
+images:
+  - "/images/projects/project-01/cover-03.jpg"
+link: "https://github.com/Ronit1608/KYC-Fraud-Detection-System"
+team:
+  - name: "Ronit Sharma"
+    role: "AI/ML Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/ronit-sharma-0763bb363/"
+---
+
+## Overview
+
+A privacy-first KYC verification app that takes a selfie and an ID-card image and decides whether the identity is **Verified, Fraudulent, or Suspicious** - entirely on-device with no cloud dependencies. It chains face detection, face matching, deepfake detection, and liveness checks into a single decision engine, then explains its reasoning with a Grad-CAM heatmap and a transparent 0-100 risk score.
+
+## Key Features
+
+- **Face matching**: MTCNN detects and crops faces from both images, and FaceNet embeddings with cosine similarity measure how closely the selfie matches the ID photo.
+- **Deepfake detection with explainability**: A ResNet18 classifier flags AI-generated faces, and Grad-CAM highlights the image regions that drove the decision.
+- **Liveness detection**: A Mediapipe Face Mesh eye-blink check via webcam confirms a live person rather than a static photo.
+- **Decision engine + risk score**: Combines all signals into a final status and a weighted risk score - `fake x 40 + (1 - similarity) x 35 + liveness_penalty x 25`, clamped to 0-100.
+- **Local-first with audit logging**: Every attempt is logged to `data/logs.json` and reviewable in an in-app past-logs viewer - nothing leaves the machine.
+
+## Technologies Used
+
+- **Python, PyTorch, torchvision** - deep-learning backbone
+- **facenet-pytorch (MTCNN + FaceNet)** - face detection and matching
+- **ResNet18 + Grad-CAM** - deepfake detection and explainability
+- **Mediapipe** - webcam-based liveness (blink) detection
+- **OpenCV, Pillow, NumPy, Pandas** - image and data handling
+- **Streamlit** - interactive verification UI
+- **pytest, Hypothesis** - unit and property-based tests
+
+## Outcome
+
+The system delivers an explainable, fully local KYC check that fuses computer vision, model explainability, and clear decision logic into a single risk score - demonstrating end-to-end ownership from face detection through fraud scoring to a shipped Streamlit product.

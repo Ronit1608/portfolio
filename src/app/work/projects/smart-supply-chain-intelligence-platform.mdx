@@ -1,0 +1,33 @@
+---
+title: "Smart Supply Chain Intelligence Platform"
+publishedAt: "2025-01-15"
+summary: "An end-to-end ML platform that forecasts demand, classifies stockout risk, and recommends reorder actions across 10,000+ records, served through an interactive dashboard."
+images:
+  - "/images/projects/project-01/cover-02.jpg"
+team:
+  - name: "Ronit Sharma"
+    role: "Data Scientist"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/ronit-sharma-0763bb363/"
+---
+
+## Overview
+
+A full-stack, local supply-chain analytics platform that turns raw operational data into decisions - forecasting demand, classifying stockout risk (Low/Medium/High), and recommending reorder actions across 10,000+ records spanning sales, inventory, suppliers, and orders.
+
+## Key Features
+
+- **Automated model benchmarking**: A training pipeline benchmarks 4 tree-ensemble models (XGBoost, LightGBM, Random Forest, Gradient Boosting) with cross-validation and auto-selects the best performer per task.
+- **Decision layer**: Converts predictions into actions - reorder timing and quantity with a 7-day safety buffer, supplier flagging, and demand-swing simulation.
+- **Automated feature engineering**: Generates features across 4 data domains for real-time decision support.
+- **Interactive dashboard**: A 14-page Streamlit app with drill-downs across sales, inventory, suppliers, and orders.
+
+## Technologies Used
+
+- **Python, scikit-learn, XGBoost, LightGBM, CatBoost** - modeling
+- **SQLAlchemy** - data layer
+- **Streamlit** - interactive analytics dashboard
+
+## Outcome
+
+The platform closes the loop from prediction to action, giving planners clear, data-backed reorder and supplier recommendations across thousands of SKUs.
