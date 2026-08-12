@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Smart Supply Chain Intelligence Platform">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0A1F"/>
+      <stop offset="1" stop-color="#181038"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.4" fill="#A5B4FC"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)" opacity="0.07"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <g opacity="0.9">
+    <rect x="1140" y="330" width="36" height="118" rx="6" fill="#818CF8"/>
+    <rect x="1194" y="268" width="36" height="180" rx="6" fill="#A855F7"/>
+    <rect x="1248" y="360" width="36" height="88" rx="6" fill="#818CF8"/>
+    <rect x="1302" y="214" width="36" height="234" rx="6" fill="#C084FC"/>
+    <rect x="1356" y="300" width="36" height="148" rx="6" fill="#818CF8"/>
+  </g>
+  <line x1="1128" y1="452" x2="1408" y2="452" stroke="#A5B4FC" stroke-width="3" opacity="0.5"/>
+  <rect x="120" y="250" width="120" height="8" rx="4" fill="url(#accent)"/>
+  <text x="120" y="322" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="32" letter-spacing="6" fill="#A5B4FC" font-weight="600">MACHINE LEARNING</text>
+  <text x="116" y="452" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="94" fill="#F8FAFC" font-weight="800">Smart Supply Chain</text>
+  <text x="120" y="530" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="40" fill="#CBD5E1">Demand forecasting, stockout risk &amp; reorder actions</text>
+  <line x1="120" y1="700" x2="1000" y2="700" stroke="#241E3A" stroke-width="2"/>
+  <text x="120" y="770" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="32" fill="#94A3B8">Python &#183; XGBoost &#183; LightGBM &#183; scikit-learn &#183; Streamlit</text>
+</svg>

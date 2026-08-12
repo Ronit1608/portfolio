@@ -34,7 +34,7 @@ const home: Home = {
   description: `Portfolio of ${person.name}, a ${person.role} building production AI systems`,
   headline: <>Turning data and AI into real-world impact</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">DocMind</strong>{" "}
