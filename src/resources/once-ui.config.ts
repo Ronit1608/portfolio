@@ -20,6 +20,7 @@ const baseURL: string = "https://portfolio-tawny-sigma-bihwx6g8vc.vercel.app";
 // Only the pages relevant to a Data/AI portfolio are enabled.
 const routes: RoutesConfig = {
   "/": true,
+  "/home": true,
   "/about": true,
   "/work": true,
   "/blog": false,
